@@ -30,9 +30,4 @@ class User(db.Model):
 
 @app.route('/users/ping', methods=['GET'])
 def ping_pong():
-    return jsonify({
-        'status':
-        'success',
-        'message':
-        'Seems it was Rebuiled! Neo. yay updated! In Docker?? Really. - Sure'
-    })
+    return jsonify({'status': 'success', 'message': 'pong!'})
